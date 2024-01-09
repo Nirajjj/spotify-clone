@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-mainbar.css" />
+    <link rel="stylesheet" href="player-bar.css" />
+    <link rel="icon" href="assets/Spotify title icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+
+  <body>
+    <div id="main">
+      <div class="sections" id="sidebar">
+        <div id="nav">
+          <div>
+            <!-- <i class="fa-solid fa-house"></i> -->
+            <img src="assets/home icon.png" alt="" />
+            <a href="#" class="navoptions" id="home">Home</a>
+          </div>
+          <div id="searchdiv">
+            <i class="fa-solid fa-magnifying-glass" id="searchicon"></i>
+            <a href="#" class="navoptions" id="Search">Search</a>
+          </div>
+        </div>
+        <div id="lib">
+          <div id="lib1">
+            <div id="lib11">
+              <img src="assets/spotify library.png" alt="photo" />
+              <a href="#">Your Library</a>
+            </div>
+            <div id="libicon">
+              <div class="circle2 pointer">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="circle2 pointer">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <div id="lib2">
+            <div id="pands" class="pointer">Podcasts & Shows</div>
+          </div>
+          <div id="lib3">
+            <div class="circle pointer">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div id="lib31" class="pointer">
+              Recents
+              <span class="material-symbols-outlined n pointer">more_vert</span>
+              <span class="material-symbols-outlined o pointer">menu</span>
+            </div>
+          </div>
+          <div id="lib4">
+            <div class="lib41">
+              <div>
+                <img
+                  src="assets/photos/maha bharat small photo.jpeg"
+                  alt="img"
+                />
+              </div>
+              <div class="liblines">
+                <p class="lib1line" id="greenline">
+                  Maha Bharat with Dhruv Rathee
+                </p>
+                <p class="lib2line">Podcast &middot; Spotify Studios</p>
+              </div>
+            </div>
+            <div class="lib41">
+              <div>
+                <img
+                  src="assets/photos/ted bussiness small photo.jpeg"
+                  alt="img"
+                />
+              </div>
+              <div class="liblines">
+                <p class="lib1line">TED Business</p>
+                <p class="lib2line">Podcast &middot; TED</p>
+              </div>
+            </div>
+            <div class="lib41">
+              <div>
+                <img src="assets/photos/50.jpeg" alt="img" />
+              </div>
+              <div class="liblines">
+                <p class="lib1line">50 Things That Made the Modern Economy</p>
+                <p class="lib2line">Podcast &middot; BBC World Service</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sections" id="mainbar">
+        <div class="mainbar-head">
+          <div class="mainbar-arrows">
+            <div class="mainbar-leftarrow-circle">
+              <img src="assets/svg/arrow.svg" alt="arrow" class="arrow-svg" />
+            </div>
+            <div class="mainbar-leftarrow-circle hide">
+              <img
+                src="assets/svg/right-arrow.svg"
+                alt="arrow"
+                class="arrow-svg"
+              />
+            </div>
+          </div>
+          <div class="mainbar-right">
+            <div class="mainbar-head-right" id="explore">Explore Premium</div>
+            <div class="mainbar-head-right" id="app">
+              <img
+                src="assets/svg/installapp.svg"
+                alt="install app"
+                class="instal-app"
+              />Install App
+            </div>
+            <button class="top-right-button">
+              <img
+                src="assets/svg/bell-icon.svg"
+                class="bell-user-icon"
+                alt="bell-icon"
+              />
+            </button>
+            <button class="top-right-button">
+              <img
+                src="assets/svg/user.svg"
+                class="bell-user-icon"
+                alt="user"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="mainbar-content">
+          <div class="heading-and-cards heading-1st">
+            <div><h3>Recently played</h3></div>
+            <div class="cards-container">
+              <div class="card">
+                <div class="transition">
+                  <img
+                    src="assets/svg/play.svg"
+                    alt="playbutton"
+                    class="playbutton"
+                  />
+                </div>
+                <div class="card-img">
+                  <img src="assets/photos/maha bharat.jpeg" alt="maha-bharat" />
+                </div>
+                <div class="card-title">
+                  <p class="card-main-title">Maha Bharat with Dhruv Rathi</p>
+                  <p class="card-2-title">Spotify Studios</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="heading-and-cards">
+            <div><h3>How to take care of yourself in 2024</h3></div>
+            <div class="cards-container">
+              <div class="card hide1">
+                <div class="transition">
+                  <img
+                    src="assets/svg/play.svg"
+                    alt="playbutton"
+                    class="playbutton"
+                  />
+                </div>
+                <img src="assets/photos/self help/1s.jpg" alt="1s" class="image-little">
+                <div class="card-img">
+                  <img src="assets/photos/self help/1.jpg" alt="maha-bharat" />
+                </div>
+                <div class="card-title">
+                  <p class="card-main-title">How To build a Happy Life</p>
+                  <p class="card-2-title">Oct 2022 &middot; 33 min</p>
+                </div>
+              </div>
+              <div class="card hide2">
+                <div class="transition">
+                  <img
+                    src="assets/svg/play.svg"
+                    alt="playbutton"
+                    class="playbutton"
+                  />
+                </div>
+                <img src="assets/photos/self help/2s.jpg" alt="1s" class="image-little">
+                <div class="card-img">
+                  <img src="assets/photos/self help/2.jpg" alt="maha-bharat" />
+                </div>
+                <div class="card-title">
+                  <p class="card-main-title">How to redefine your self worth </p>
+                  <p class="card-2-title">Mar 2021 &middot; 30 min</p>
+                </div>
+              </div>
+              <div class="card hide3">
+                <div class="transition">
+                  <img
+                    src="assets/svg/play.svg"
+                    alt="playbutton"
+                    class="playbutton"
+                  />
+                </div>
+                <img src="assets/photos/self help/3s.jpg" alt="1s" class="image-little">
+                <div class="card-img">
+                  <img src="assets/photos/self help/3.jpg" alt="maha-bharat" />
+                </div>
+                <div class="card-title">
+                  <p class="card-main-title">Future You</p>
+                  <p class="card-2-title">Dec 2023 &middot; 53 min</p>
+                </div>
+              </div>
+              <div class="card hide4">
+                <div class="transition">
+                  <img
+                    src="assets/svg/play.svg"
+                    alt="playbutton"
+                    class="playbutton"
+                  />
+                </div>
+                <img src="assets/photos/self help/4s.jpg" alt="1s" class="image-little">
+                <div class="card-img">
+                  <img src="assets/photos/self help/4.jpg" alt="maha-bharat" />
+                </div>
+                <div class="card-title">
+                  <p class="card-main-title">Boost Your Body Acceptence For Better Health</p>
+                  <p class="card-2-title">Apr 2019 &middot; 22 min</p>
+                </div>
+              </div>
+              <div class="card hide5">
+                <div class="transition">
+                  <img
+                    src="assets/svg/play.svg"
+                    alt="playbutton"
+                    class="playbutton"
+                  />
+                </div>
+                <img src="assets/photos/self help/5s.jpg" alt="1s" class="image-little">
+                <div class="card-img">
+                  <img src="assets/photos/self help/5.jpg" alt="maha-bharat" />
+                </div>
+                <div class="card-title">
+                  <p class="card-main-title">Chris paul ON: How to Create Habit For Discipline</p>
+                  <p class="card-2-title">Mar 2022 &middot; 31 min</p>
+                </div>
+              </div>
+              <div class="card hide6" >
+                <div class="transition">
+                  <img
+                    src="assets/svg/play.svg"
+                    alt="playbutton"
+                    class="playbutton"
+                  />
+                </div>
+                <img src="assets/photos/self help/6s.jpg" alt="1s" class="image-little">
+                <div class="card-img">
+                  <img src="assets/photos/self help/6.jpg" alt="maha-bharat" />
+                </div>
+                <div class="card-title">
+                  <p class="card-main-title">Improve Your Mental Health</p>
+                  <p class="card-2-title">Jan 2022 &middot; 32 min</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="heading-and-cards">
+            <div><h3>Made For You</h3></div>
+            <div class="cards-container">
+              <div class="card hide1">
+                <div class="transition">
+                  <img
+                    src="assets/svg/play.svg"
+                    alt="playbutton"
+                    class="playbutton"
+                  />
+                </div>
+                <div class="card-img">
+                  <img src="assets/photos/daily mix/1.jpg" alt="dialy-mix" />
+                </div>
+                <div class="card-title">
+                  <p class="card-main-title">Daily Mix 1</p>
+                  <p class="card-2-title">Kishore Kumar, Pritam, Javed-Mohsin and...</p>
+                </div>
+              </div>
+              <div class="card hide2">
+                <div class="transition">
+                  <img
+                    src="assets/svg/play.svg"
+                    alt="playbutton"
+                    class="playbutton"
+                  />
+                </div>
+                <div class="card-img">
+                  <img src="assets/photos/daily mix/2.jpg" alt="dialy-mix" />
+                </div>
+                <div class="card-title">
+                  <p class="card-main-title">dialy-mix 2</p>
+                  <p class="card-2-title">Pritam, A.R. Rahman Arijit Singh and more</p>
+                </div>
+              </div>
+              <div class="card hide3">
+                <div class="transition">
+                  <img
+                    src="assets/svg/play.svg"
+                    alt="playbutton"
+                    class="playbutton"
+                  />
+                </div>
+                <div class="card-img">
+                  <img src="assets/photos/daily mix/3.jpg" alt="dialy-mix" />
+                </div>
+                <div class="card-title">
+                  <p class="card-main-title">dialy-mix</p>
+                  <p class="card-2-title">Badshah, Tanishk Bagchi, Pritam and...</p>
+                </div>
+              </div>
+              <div class="card hide4">
+                <div class="transition">
+                  <img
+                    src="assets/svg/play.svg"
+                    alt="playbutton"
+                    class="playbutton"
+                  />
+                </div>
+                <div class="card-img">
+                  <img src="assets/photos/daily mix/4.jpg" alt="dialy-mix" />
+                </div>
+                <div class="card-title">
+                  <p class="card-main-title">dialy-mix 4</p>
+                  <p class="card-2-title">Black Eyed Peas, Doja Cat, Post Malone and...</p>
+                </div>
+              </div>
+              <div class="card hide5">
+                <div class="transition">
+                  <img
+                    src="assets/svg/play.svg"
+                    alt="playbutton"
+                    class="playbutton"
+                  />
+                </div>
+                <div class="card-img">
+                  <img src="assets/photos/daily mix/5.jpg" alt="dialy-mix" />
+                </div>
+                <div class="card-title">
+                  <p class="card-main-title">dialy-mix 5</p>
+                  <p class="card-2-title">Tanishk Bagchi, Vivek-Mervin, Javed-Mohsi...</p>
+                </div>
+              </div>
+              <div class="card hide6" >
+                <div class="transition">
+                  <img
+                    src="assets/svg/play.svg"
+                    alt="playbutton"
+                    class="playbutton"
+                  />
+                </div>
+                <div class="card-img">
+                  <img src="assets/photos/daily mix/6.jpg" alt="dialy-mix" />
+                </div>
+                <div class="card-title">
+                  <p class="card-main-title">Discover Weekly</p>
+                  <p class="card-2-title">Your weekly mixtape of fresh music. Enjoy new...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer>
+            <br>
+            <br>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+            <br>
+            <br>
+          </footer>
+        </div>
+      </div>
+      <div class="sections" id="playerbar">
+        <div class="playerbar-left">
+          <!-- <div > -->
+            <img class="playerbar-image" src="assets/photos/maha bharat small photo.jpeg" alt="">
+          <!-- </div> -->
+          <div class="playerbar-title">
+            <p class="playerbar-title-one">Why do we spead so many languages in india?</p>
+            <p class="playerbar-title-two">Maha Bharat With Dhruv Rathee</p>
+          </div>
+          <div class="playerbar-plus-icon">
+            <img src="assets/svg/plus.svg" class="playbar-plus-icon" alt="plus-icon">
+          </div>
+        </div>
+        <div class="playerbar-mid">
+          <!-- <div class="playerbar-controls"> -->
+            <div id="playerbar-icons">
+              <img src="assets/svg/playerbar-speed-1x.svg" alt="icons" class="icons1 playerbar-mid-left-icon" id="playerbar-icon-speed">
+              <img src="assets/svg/playerbar-backward.svg" alt="icons" class="icons1" id="playerbar-icon-backward">
+              <img src="assets/svg/playerbar-previous-button.svg" alt="icons" class="icons1" id="playerbar-icon-previous">
+              <div id="play-and-pause">
+              <img src="assets/svg/play.svg" alt="icons" id="playerbar-icon-play">
+              </div>
+              <img src="assets/svg/playerbar-previous-button.svg" alt="icons" class="icons1" id="playerbar-icon-next">
+              <img src="assets/svg/playerbar-forward.svg" alt="icons" class="icons1" id="playerbar-icon-forward">
+            </div>
+          <!-- </div> -->
+          <div class="playerbar-range">
+            <span class="playbar-time">0:00</span>
+            <!-- <div class="playerbar-range-div"> -->
+             <input type="range" name="range" id="range">
+             <span class="playbar-time">23:58</span>
+            <!-- </div> -->
+          </div>
+        </div>
+        <div class="playerbar-right">
+          <button class="playerbar-right-button">
+            <img src="assets/svg/playbar-right-square-play-btn.svg" alt="btn" class="playerbar-right-icons">
+          </button>
+          <button class="playerbar-right-button">
+            <img src="assets/svg/playerbar-right-q.svg" alt="btn" class="playerbar-right-icons">
+          </button>
+          <button class="playerbar-right-button">
+            <img src="assets/svg/playerbar-connectToDevice-btn.svg" alt="btn" class="playerbar-right-icons">
+          </button>
+          <button class="playerbar-right-button">
+            <img src="assets/svg/plyerbar-volumn.svg" alt="btn" class="playerbar-right-icons">
+          </button>
+          <div id="plyerbar-right-range">
+            <input type="range" name="range" id="playerbar-volumn-range">
+          </div>
+          <button class="playerbar-right-button">
+            <img src="assets/svg/playerbar-miniplayer.svg" alt="btn" class="playerbar-right-icons" id="playerbar-right-last-icon">
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,276 @@
+#mainbar {
+  flex: 1;
+  border-radius: 10px;
+  margin: 7px 7px 70px 9px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.03), rgb(18, 18, 18));
+  /* padding-right: 20px; */
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(99, 99, 99);
+}
+/* #mainbar-content:hover::-webkit-scrollbar-thumb {
+  opacity: 1;
+  background-color: rgb(137, 137, 137);
+} */
+
+.mainbar-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  width: inherit;
+  height: 140px;
+  max-width: inherit;
+  background: transparent;
+  /* overflow: hidden; */
+}
+
+.arrow-svg {
+  filter: invert(1);
+  width: 16px;
+}
+.mainbar-arrows {
+  margin-left: 20px;
+  display: flex;
+  width: 72px;
+  justify-content: space-between;
+}
+.mainbar-leftarrow-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: rgb(19, 19, 19);
+  cursor: not-allowed;
+}
+
+.mainbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  /* width: 350px; */
+  /* margin-right: 20px;  */
+  /* overflow: hidden; */
+} 
+
+.mainbar-head-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-weight: 900;
+  padding: 0 15px;
+  height: 32px;
+  font-size: 12px;
+  margin-right: 7px;
+  cursor: pointer;
+}
+#explore:hover, #app:hover, .top-right-button:hover {
+  /* padding: 0 17px; */
+  /* font-size: 12.5px; */
+  /* height:  33px; */
+  /* margin-right: 6px; */
+  transform: scale(1.05);
+}
+
+.instal-app {
+  width: 15px;
+  margin-right: 5px;
+  filter: invert(1);
+}
+#app {
+  background-color: black;
+
+}
+#explore {
+  background-color: white;
+  color: black;
+}
+
+.bell-user-icon {
+  width: 16px;
+  filter: invert(1);
+}
+
+.top-right-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: #000;
+  border-radius: 17px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  margin-right: 7px;
+}
+
+@media (max-width: 1000px) {
+  #explore, .hide {
+    display: none;
+    
+  }
+}
+
+
+
+/* content */
+
+
+
+
+.heading-and-cards {
+  margin-top: 40px;
+}
+.heading-1st {
+  margin-top: 10px;
+}
+
+.mainbar-content {
+  padding-left: 25px;
+  padding-right: 25px;
+  overflow-y: scroll;
+}
+.cards-container {
+  display: flex;
+  /* height: 220px; */
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  /* width: 900px; */
+  overflow-x: hidden;
+  /* flex-wrap: nowrap; */
+  /* flex-basis: 25%; */
+  /* flex: 1 0 25%; */
+}
+.card {
+  min-width: 197px;
+  max-width: 197px;
+  height: 265px;
+  background-color: rgb(24, 24, 24);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 7px;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  /* flex-basis: 25%;
+  margin-right: 15px;
+  padding-left: 7px;
+  padding-right: 7px; */
+  flex: 1 0 25%;
+}
+@media (max-width: 870px) {
+  .hide3, .hide4{
+    display: none;
+  }
+  .card {
+    flex: 1 0 50%;
+  }
+}
+@media (max-width: 1115px) {
+  .hide4{
+    display: none;
+  }
+  .card {
+    flex: 1 0 33%;
+  }
+}
+/* @media (min-width: 2000px) {
+  .hide5, .hide6 {
+    display: block;
+  }
+  .card {
+    flex: 1 0 16.66%;
+  }
+} */
+.hide5, .hide6 {
+  display: none;
+}
+/* .card-img{
+  width: 100px;
+} */
+
+
+
+
+.card-img img {
+  width: 165px;
+  border-radius: 7px;
+  margin-top: 5px;
+}
+
+.card-title {
+  width: 160px;
+  height: 50px;
+  margin-top: 10px;
+
+}
+
+.card-main-title {
+  font-size: 15px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-wrap: nowrap;
+}
+
+.card-2-title {
+  font-size: 12px;
+  margin-top: 9px;
+  color: rgb(121, 121, 121);
+  font-weight: 700;
+
+}
+
+h3 {
+  font-size: 22px;
+  letter-spacing: -1px;
+}
+
+.transition {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  background-color: rgb(37, 216, 101);
+  position: absolute;
+  top: 150px;
+  right: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+.card:hover .transition {
+  transform: translateY(-25px);
+  opacity: 1;
+}
+.card:hover {
+  background-color: rgb(40, 40, 40);
+}
+.playbutton {
+  width: 22px;
+}
+
+.image-little {
+  position: absolute;
+  width: 40px;
+  top: 145px;
+  left: 9px;
+  border-radius: 4px;
+}
